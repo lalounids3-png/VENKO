@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENKO</title>
+    <link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="panel">
+        <img src="/static/logo.jpeg" alt="Logo" width="312" height="210">
+
+        <h1>VENKO</h1>
+        <p class="subtitulo">La Mejor Jugueteria </p>
+
+        <form action="/agregar" method="POST">
+
+            <label>Usuario</label>
+            <input type="text" name="usuario" placeholder="Ingresa tu usuario" required>
+
+            <label>Correo</label>
+            <input type="email" name="correo" placeholder="Ingresa tu correo" required>
+            
+            <label>Contraseña</label>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+
+            <button type="submit">
+                Crear cuenta
+            </button>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

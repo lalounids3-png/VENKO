@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VENKO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/estilos_bootstrap.css">
+</head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="/static/logo.jpeg" alt="Logo"  width="80" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h2>Bienvenido {{ nombre }}</h2>
+                            <h2>{{ rol }}</h2></a>
+                    </li>
+                </ul>
+                
+                <div id="liveAlertPlaceholder">
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn" width="15">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+    <div class="container-items">
+
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/736x/b1/cf/05/b1cf059dc8e8a83a63df7332ecb9e791.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Muñecos de acción</h2>
+                <button class="ver" data-sec="Muñecos accion">Ver</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://i.redd.it/m57ttfujmog31.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Carros</h2>
+                <button class="ver" data-sec="Carros">Ver</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://assets.turbologo.com/blog/en/2021/11/15053140/Barbie-Logo-1959.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Muñecas</h2>
+                <button class="ver" data-sec="Muñecas">Ver</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://cdn-icons-png.flaticon.com/512/1587/1587077.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Juegos de mesa</h2>
+                <button class="ver" data-sec="Juegos de Mesa">Ver</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://cdn-icons-png.flaticon.com/512/857/857418.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Balones</h2>
+                <button class="ver" data-sec="Balones">Ver</button>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="modal fade" id="m">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Productos</h5>
+                </div>
+                <div class="modal-body" id="lista"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/static/acciones_cliente.js"></script>
+</body>
+</html>

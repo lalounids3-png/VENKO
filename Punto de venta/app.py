@@ -5,10 +5,10 @@ import os
 app = Flask(__name__)
 
 conexion = mysql.connector.connect(
-    host=os.environ.get("DB_HOST"),
-    user=os.environ.get("DB_USER"),
-    password=os.environ.get("DB_PASSWORD"),
-    database=os.environ.get("DB_NAME")
+    host=os.environ.get("sql.freedb.tech"),
+    user=os.environ.get("u_m2BC0Z"),
+    password=os.environ.get("zB2VDxhseWAR"),
+    database=os.environ.get("freedb_cRbp6YTf")
 )
 
 def crear_tabla_ventas():

@@ -9,6 +9,7 @@ conexion = mysql.connector.connect(
     user=os.environ.get("u_m2BC0Z"),
     password=os.environ.get("zB2VDxhseWAR"),
     database=os.environ.get("freedb_cRbp6YTf")
+    port=int(os.environ.get(3306))
 )
 
 def crear_tabla_ventas():

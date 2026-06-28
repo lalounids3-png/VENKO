@@ -5,11 +5,11 @@ import os
 app = Flask(__name__)
 
 conexion = mysql.connector.connect(
-    host=os.environ.get("sql.freedb.tech"),
-    user=os.environ.get("u_m2BC0Z"),
-    password=os.environ.get("zB2VDxhseWAR"),
-    database=os.environ.get("freedb_cRbp6YTf")
-    port=int(os.environ.get(3306))
+    host="sql.freedb.tech",
+    user="u_m2BC0Z",
+    password="zB2VDxhseWAR",
+    database="freedb_cRbp6YTf",
+    port=3306
 )
 
 def crear_tabla_ventas():
